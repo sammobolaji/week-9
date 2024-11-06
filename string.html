@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <h1>JavaScript is a versatile programming language</h1>
+
+    <ul>
+        <li id="quest1"></li>
+        <li id="quest2"></li>
+        <li id="quest3"></li>
+        <li id="quest4"></li>
+        <li id="quest5"></li>
+        <li id="quest6"></li>
+        <li id="quest7"></li>
+        <li id="quest8"></li>
+        <li id="quest9"></li>
+        <li id="quest10"></li>
+        <li id="quest11"></li>
+        <li id="quest12"></li>
+        <li id="quest13"></li>
+        <li id="quest14"></li>
+    </ul>
+</body>
+<script>
+    const str = "JavaScript is a versatile programming language.";
+    
+    
+//Length of sentence
+    document.getElementById('quest1').textContent += str.length;
+
+//Convert sentence toLowerCase
+    document.getElementById('quest2').textContent +=str.toLowerCase();
+
+//Extract the word "versatile" from sentence
+    document.getElementById('quest3').textContent +=str.slice(16, 25);
+
+//Replace JavaScript with Python
+    document.getElementById('quest4').textContent +=str.replace('JavaScript', 'Python');
+
+//Check for word "language" in the sentence
+    document.getElementById('quest5').textContent += str.includes('languge');
+
+//Check for position index of 'programming' in the sentence
+    document.getElementById('quest6').textContent +=str.indexOf('programming');
+
+//Get the first 10 characters of the sentence 
+    document.getElementById('quest7').textContent += str.slice(0, 10);
+
+//Check if sentence ends with language
+    document.getElementById('quest8').textContent += str.endsWith('language');
+
+//Split sentence into array of words
+    document.getElementById('quest9').textContent += JSON.stringify(str.split(' '));
+
+//Remove whitespace from both ends of the sentence
+    document.getElementById('quest10').textContent += str.trim();
+
+//Repeat sentence twice with space in between 
+    document.getElementById('quest11').textContent += str+ " " +str;
+
+//Get the last 8 character 
+    document.getElementById('quest12').textContent += str.slice(-8);
+
+//Replace all occurrence 'a' with '@' in the sentence
+    document.getElementById('quest13').textContent += str.replaceAll('a', '@');
+
+</script>
+</html>
